@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javsscript</title>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <table>
+        <h2>calculator</h2>
+
+        <tr>
+            <td>First number</td>
+            <td><input type="number" name="number1" id="first" placeholder="1st number"></td>
+        </tr>
+        <tr>
+            <td>Second number</td>
+            <td><input type="number" name="number2" id="second" placeholder="2nd number"></td>
+
+            <td></td>
+        </tr>
+
+
+
+        <tr>
+            <td></td>
+
+            <td>
+
+                <input type="button" value="+" id="add">
+                <input type="button" value="-" id="sub">
+                <input type="button" value="*" id="mul">
+                <input type="button" value="/" id="div">
+                <input type="button" value="%" id="mod">
+            </td>
+        </tr>
+        <tr>
+            <td>result</td>
+            <td><input type="text" id="result" placeholder="output"></td>
+
+            <td></td>
+        </tr>
+    </table>
+
+    <script>
+        var add=document.getElementById("add");
+        add.onclick=function(){
+
+   var firstNum = Number(document.getElementById("first").value);
+   var second = Number(document.getElementById("second").value);
+   var result=firstNum+second;
+
+   document.getElementById("result").value= result;
+        }
+
+
+        var sub = document.getElementById("sub");
+
+        sub.onclick = function (){
+ var firstNumber=document.getElementById("first").value;
+ var secondNumber=document.getElementById("second").value;
+
+ var result = firstNumber - secondNumber;
+ document.getElementById("result").value = result;
+
+
+
+
+        }
+
+
+        var mul = document.getElementById("mul");
+
+        mul.onclick = function(){
+
+            var f_name= document.getElementById("first").value;
+            var l_name = document.getElementById("second").value;
+
+            var result = f_name * l_name;
+            document.getElementById("result").value= result;
+            
+        }
+        var mul = document.getElementById("div");
+
+        div.onclick = function(){
+
+            var f_name= document.getElementById("first").value;
+            var l_name = document.getElementById("second").value;
+
+            var result = f_name / l_name;
+            document.getElementById("result").value= result;
+
+        }
+        var mod = document.getElementById("mod");
+
+        mod.onclick = function(){
+
+            var f_name= document.getElementById("first").value;
+            var l_name = document.getElementById("second").value;
+
+            var result = f_name % l_name;
+            document.getElementById("result").value= result;
+
+        }
+
+    </script>
+</body>
+
+</html>
