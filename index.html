@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi</title>
+</head>
+<body>
+    <table>
+        <tr> 
+            <td>weight</td>
+            <td><input type="number" id="weight"></td>
+        </tr>
+        <tr> 
+            <td>hight</td>
+            <td><input type="number" id="hight"></td>
+        </tr>
+        <tr> 
+            <td>result</td>
+            <td><input type="text" id="result"></td>
+        </tr>
+        <tr> 
+            <td><input type="button" id="submit" value="BMI"></td>
+        </tr>
+    </table>
+
+    <script>
+
+        var bmi = document.getElementById("submit");
+
+        bmi.onclick = function(){
+
+            var weight = document.getElementById("weight").value;
+            var hight = document.getElementById("hight").value;
+
+            var bmi = weight/hight*2;
+            document.getElementById("result").value=bmi;
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
