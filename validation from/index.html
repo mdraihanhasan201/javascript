@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validations</title>
+</head>
+<body>
+
+    <Form>
+
+        <table>
+
+            <tr>
+                <td>
+                    <h3>name:  <input type="text" name="name" id="name"></h3>
+                    <h3>pasword <input type="password" name="pasword" id="pasword"></h3>
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="submit"id="submit"></td>
+            </tr>
+
+
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+    </Form>
+
+<script>
+
+    var submit = document.getElementById("submit");
+    submit.onclick=function () {
+        var name = document.getElementById("name").value;
+        var pasword = document.getElementById("pasword").value;
+
+        if (name == ""|| pasword == "" ){
+            alert("  should fillup  both element");
+        }
+
+        if(pasword.length <4 ){
+            alert("pasword should be given atlest 4 caracters");
+        }
+
+        if ( pasword.length>12){
+            alert("pasword is too long!")
+        }
+
+        if (name.slice(0,1)=="@"|| name .slice(0,1)=="_" ) {
+            alert("name shouldnot start with @,_,any number..")
+        }
+
+
+
+
+
+
+
+
+        else{
+            alert("its successfully done.")
+        }
+
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
