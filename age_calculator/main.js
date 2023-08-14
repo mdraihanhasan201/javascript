@@ -1,24 +1,22 @@
-//  var clickme=document.getElementById("clickme");
-//  let h1 = document.createElement("h1")
-//  clickme.onclick=function(){
-//     let brithday=prompt("enter your birthday")
-   
-//    let textnode=h1.innerHTML("your age is"+brithday);
-//    h1.appendChild(textnode);
-
-   
+let clickme = document.getElementById("clickme");
+let reset = document.getElementById("reset")
 
 
+clickme.onclick = function(){
+    var birthday = document.getElementById("get-age").value;
+    if (birthday == ""){
+       alert("enter your birthday")   ;
+    } else{
+        let age = 2023-birthday;
+        document.getElementById("get-age").value=age;
 
-//  }birthday
+    }
 
-function ageindays(){
-    var birthday = prompt("enter your day")
-    var ageindayss= (2023-birthday)*365;
-    var h1 = document.createElement("h1");
-    var textanswer=document.TEXT_NODE("your age is "+ageindays+"years old");
-    h1.setAttribute("id","ageindays")
-    h1.appendChild(textanswer);
-    document.getElementById("get-age").appendChild(h1)
 
+
+  
+    
+}
+reset. onclick = function(){
+    location.reload();
 }
