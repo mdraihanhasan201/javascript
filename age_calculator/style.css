@@ -41,6 +41,7 @@ align-items: center;
     width: 100px;
     background: green;
     color: white;
+    
 
    
     
@@ -49,6 +50,8 @@ align-items: center;
     box-shadow: 10px 10px 10px;
     background:white;
     color: #000;
+   
+
     
 }
 .given-age{
@@ -64,11 +67,15 @@ align-items: center;
     width: 100px;
     background:red;
     color: white;
+    
+
 }
 #reset:hover{
     box-shadow: 10px 10px 10px;
     background:white;
     color: #000;
+    
+
     
 }
 #get-age{
@@ -78,6 +85,14 @@ align-items: center;
     background: #c28f8f;
     color: rgb(9, 7, 7);
     font-weight: bold;
+    font-size: medium;
+    padding: 10px;
 
 }
+
+h2{
+    margin-bottom: 10px;
+
+}
+
 
