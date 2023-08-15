@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #e1bbbb;
+    
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.the-bulb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 50px;
+
+}
+
+#left{
+    width: 160px;
+    height: 80px;
+    border-radius: 10px;
+    background: green;
+    color: white;
+    text-transform: capitalize;
+    font-size: large;
+    
+
+}
+#right{
+    width: 160px;
+    height: 80px;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    text-transform: capitalize;
+    font-size: large;
+    
+
+}
+#left:hover{
+    background:white;
+    color: black;
+    text-transform: capitalize;
+    font-size: large;
+}
+#right:hover{
+    background:white;
+    color: black;
+    text-transform: capitalize;
+    font-size: large;
+}
+
+#my-image{
+    height: 50px;
+    width: 100px;
+
+
+}
