@@ -1,75 +1,54 @@
+const paymentSuccessful = true;
+const marks = 80;
 
+function enroll() {
+    console.log("course enrollment is processing");
 
-const paymentSuccessfull = true;
-const marks=80;
-
-
-function enroll(){
-    console.log("course inrollment is processing");
-
-    let promice =new promice(function(resolve,reject){
-        setTimeout(function(){
-            if(paymentSuccessfull){
-                resolve()
-                }else{
-                    reject("payment failed");
-    
+    let promise = new Promise(function(resolve, reject) {
+        setTimeout(function() {
+            if (paymentSuccessful) {
+                resolve();
+            } else {
+                reject("payment failed");
             }
-        },2000);
-       
+        }, 2000);
     });
 
-    return promice;
+    return promise;
+}
 
-   
-
-};
-
-
-function progress(){
-
+function progress() {
     console.log("progressing is processing");
-    let promice =new promice(function(resolve,reject){
-        setTimeout(function(){
-            if(marks>=45){
-                resolve()
-                }else{
-                    reject("failed to pass the examination");
-                    }
-    })
-   
-    },3000);
-        
-    return promice;
-    
-};
+    let promise = new Promise(function(resolve, reject) {
+        setTimeout(function() {
+            if (marks >= 45) {
+                resolve();
+            } else {
+                reject("failed to pass the examination");
+            }
+        }, 3000);
+    });
 
-function getcertificate(){
+    return promise;
+}
+
+function getCertificate() {
     console.log("get certificate is processing");
-    let promice=new promice(function(resolve){
-        setTimeout(function(){
-            resolve("congrats! you got the  certificate");
-                   
-        })
-       
-    },2000);
+    let promise = new Promise(function(resolve) {
+        setTimeout(function() {
+            resolve("congrats! you got the certificate");
+        }, 2000);
+    });
 
+    return promise;
 }
 
 enroll()
-     .then(progress)
-     .then(getcertificate)
-     .then(function(value){
-    console.log(value);
-})
-.catch(function(err){
-    console.error(err);
-})
-
-
-
-
-
-
-
-
+    .then(progress)
+    .then(getCertificate)
+    .then(function(value) {
+        console.log(value);
+    })
+    .catch(function(err) {
+        console.error(err);
+    });
